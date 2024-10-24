@@ -7,11 +7,13 @@ public class Student {
     private final String firstName;
     private final String lastName;
     private final List<Grade> grades;
+    private final List<String> enrolledCourses;
 
     public Student(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.grades = new ArrayList<>();
+        this.enrolledCourses = new ArrayList<>();
     }
 
     public String getFirstName() {
@@ -20,6 +22,14 @@ public class Student {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public void enrollInCourse(String course) {
+        enrolledCourses.add(course);
+    }
+
+    public boolean isEnrolledInCourse(String course) {
+        return enrolledCourses.contains(course);
     }
 
     public void addGrade(Grade grade) {
