@@ -28,6 +28,10 @@ public class Student {
         enrolledCourses.add(course);
     }
 
+    public void unenrollFromCourse(String course) {
+        enrolledCourses.remove(course);
+    }
+
     public boolean isEnrolledInCourse(String course) {
         return enrolledCourses.contains(course);
     }
