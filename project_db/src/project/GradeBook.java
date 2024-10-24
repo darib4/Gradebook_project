@@ -20,8 +20,16 @@ public class GradeBook {
         teachers.add(teacher);
     }
 
-    public void addGradeToStudent(Student student, Grade grade) { // Тук поправяме от Grades на Grade
-        student.addGrade(grade);
+    public void enrollStudentInSubject(Student student, Teacher teacher) {
+        student.enrollInCourse(teacher.getSubject());
+    }
+
+    public void addGradeToStudent(Student student, Grade grade) {
+        if (student.isEnrolledInCourse(grade.getSubject())) {
+            student.addGrade(grade);
+        } else {
+            System.out.println("Ученикът не е записан в този предмет и не може да получи оценка.");
+        }
     }
 
     public void showStudents() {
@@ -37,5 +45,3 @@ public class GradeBook {
         student.getGrades().forEach(System.out::println);
     }
 }
-
-
