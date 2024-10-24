@@ -22,4 +22,3 @@ public class Teacher {
         return String.format("Преподавател: %s, Предмет: %s", name, subject);
     }
 }
-
