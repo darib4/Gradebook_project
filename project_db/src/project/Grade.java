@@ -7,6 +7,7 @@ public class Grade {
     public Grade(double value, Teacher teacher) {
         this.value = value;
         this.teacher = teacher;
+        this.subject = subject;
     }
 
     public double getValue() {
@@ -15,6 +16,10 @@ public class Grade {
 
     public Teacher getTeacher() {
         return teacher;
+    }
+
+    public String getSubject() {
+        return subject;
     }
 
     @Override
