@@ -1,0 +1,12 @@
+welcome=Добре дошли в MobileBG!
+choose_option=Изберете опция:
+view_listings=1. Преглед на обяви
+add_listing=2. Добавяне на обява
+search_listings=3. Търсене на обяви
+view_statistics=4. Преглед на статистики
+exit=5. Изход
+enter_choice=Въведете избор:
+goodbye=Довиждане!
+no_listings=Няма налични обяви.
+listing_added=Обявата беше добавена успешно!
+no_results=Няма намерени резултати.

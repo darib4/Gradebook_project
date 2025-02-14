@@ -1,0 +1,12 @@
+welcome=Welcome to MobileBG!
+choose_option=Choose an option:
+view_listings=1. View Listings
+add_listing=2. Add Listing
+search_listings=3. Search Listings
+view_statistics=4. View Statistics
+exit=5. Exit
+enter_choice=Enter choice:
+goodbye=Goodbye!
+no_listings=No listings available.
+listing_added=Listing added successfully!
+no_results=No results found.
